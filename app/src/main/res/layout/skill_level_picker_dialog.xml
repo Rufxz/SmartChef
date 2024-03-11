@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:text="How is your cooking skill?"
+            android:textColor="@color/dark_green"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/radio_group"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/low_skill_radio_btn"
+                style="@style/SkillPickerRadioButton"
+                android:text="Low" />
+
+            <RadioButton
+                style="@style/SkillPickerRadioButton"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/medium_skill_radio_btn"
+                android:checked="true"
+                android:text="Medium" />
+
+            <RadioButton
+                android:id="@+id/high_skill_radio_btn"
+                style="@style/SkillPickerRadioButton"
+                android:layout_marginLeft="20dp"
+                android:text="High" />
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/continue_btn"
+            style="@style/MyFullWidthBtn"
+            android:layout_marginTop="15dp"
+            android:text="Continue" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
