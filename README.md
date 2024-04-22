@@ -14,8 +14,9 @@ Smart Chef is a comprehensive cooking companion app designed to help users disco
 ## Installation
 
 1. Clone the repository:
+
    -bash:
     git clone https://github.com/your-username/smart-chef.git
 
-2. Download the Release APK:
+3. Download the Release APK:
     - Unzip the file and run it locally on your emulator.
